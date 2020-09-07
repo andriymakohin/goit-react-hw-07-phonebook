@@ -28,7 +28,7 @@ export const asyncAddContact = (contact) => async (dispatch) => {
   try {
     dispatch(resetError());
     const { data } = await axios.post(
-      "https://goit-778ad.firebaseio.com/conatct",
+      "http://localhost:5000/contacts",
       newContact,
       options
     );
